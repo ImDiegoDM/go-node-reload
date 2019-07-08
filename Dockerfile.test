@@ -1,0 +1,5 @@
+FROM go-node-reload:latest
+
+RUN go get -d -v ./...
+
+CMD npx gulp --file /go/src/test/main.go
